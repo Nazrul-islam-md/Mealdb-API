@@ -1,3 +1,11 @@
+const buttonInput = document.getElementById('button-input');
+const inputField = document.getElementById('input-field');
+inputField.addEventListener('keypress', function(event){
+  if(event.key == 'Enter'){
+    buttonInput.click();
+  }
+})
+
 document.getElementById('button-input').addEventListener('click', function(){
     const inputField = document.getElementById('input-field');
     const inputFieldValue = inputField.value;
